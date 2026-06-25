@@ -1,0 +1,50 @@
+HOTEL AI AGENT DEMO OUTPUT
+
+INPUT EMAIL
+From: Demo Customer <demo.customer@example.com>
+Subject: Booking request
+
+Hello, please check availability for 1 room for Amit Sharma, 2 adults and 0 children, from 10 September 2026 to 12 September 2026.
+
+Also, is parking available?
+
+Regards 
+Rishabh Rawat
+
+WHAT THE SYSTEM DETECTED
+Primary intent: availability_check
+Next action: answer_question_and_acknowledge_booking
+Summary: Customer asks to check availability for a booking (1 room, Amit Sharma, 2 adults, 0 children) from 10 Sep 2026 to 12 Sep 2026, and asks whether parking is available.
+
+BOOKING DETAILS EXTRACTED
+Guest: Amit Sharma
+Arrival: 10 September 2026
+Departure: 12 September 2026
+Adults: 2
+Children: 0
+Rooms: 1
+Reference: Not provided
+Missing fields: None
+
+POLICY ANSWERS USED
+1. Is parking available?
+   Answer: Parking requests are subject to availability, may incur additional charges, and cannot be guaranteed. Our reservations team will confirm the property-specific parking options.
+   Sources: Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=23, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=21, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=24, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=22, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=8
+
+CUSTOMER REPLY
+To: demo.customer@example.com
+Subject: Re: Availability request (10–12 Sep 2026) & parking
+
+Hello Rishabh Rawat,
+
+Thank you for your email. We have received your request for 1 room for Amit Sharma (2 adults, 0 children) from 10 September 2026 to 12 September 2026.
+
+Regarding parking: parking availability is subject to confirmation by the property and may incur additional charges. We will share the property-specific parking options once the hotel confirms.
+
+Kindly allow us some time to check availability for your requested dates.
+
+Regards,
+Reservations Team
+
+FINAL STATUS
+POLICY_ANSWERED_AND_BOOKING_ACKNOWLEDGED

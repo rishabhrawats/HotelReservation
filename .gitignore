@@ -1,0 +1,9 @@
+.env
+.pytest_cache/
+__pycache__/
+*.py[cod]
+.venv/
+data/chroma/
+data/*.db
+data/msal_token_cache.json
+logs/*.txt

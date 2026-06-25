@@ -1,0 +1,62 @@
+HOTEL AI AGENT DEMO OUTPUT
+
+INPUT EMAIL
+From: Demo Customer <demo.customer@example.com>
+Subject: Booking request
+
+Hello, please check availability for 1 room for Amit Sharma, 2 adults and 0 children, from 10 September 2026 to 12 September 2026.
+
+Also, is parking available?
+
+Regards 
+Rishabh Rawat
+
+WHAT THE SYSTEM DETECTED
+Primary intent: availability_check
+Next action: answer_question_and_acknowledge_booking
+Summary: Customer requests availability for 1 room for Amit Sharma (2 adults, 0 children) from 10 September 2026 to 12 September 2026, and asks whether parking is available.
+
+BOOKING DETAILS EXTRACTED
+Guest: Amit Sharma
+Arrival: 10 September 2026
+Departure: 12 September 2026
+Adults: 2
+Children: 0
+Rooms: 1
+Reference: Not provided
+Missing fields: None
+
+ORACLE ACTION
+Operation: availability_checked
+Success: True
+Message: Requested dates are available. A quotation was prepared.
+Requested stay: 2026-09-10 to 2026-09-12
+Available options:
+  - 2026-09-10 to 2026-09-12, room DSPN, 218 GBP before tax
+
+QUOTE PDF
+C:\AI Labs\AI\hotel-ai-agent\data\demo_output\quotation_20260625T181457Z_availability_quoted.pdf
+
+POLICY ANSWERS USED
+1. Is parking available?
+   Answer: Parking requests are subject to availability, may incur additional charges, and cannot be guaranteed. Our reservations team will confirm the property-specific parking options.
+   Sources: Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=23, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=21, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=24, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=22, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=8
+
+CUSTOMER REPLY
+To: demo.customer@example.com
+Subject: Re: Booking request
+
+Parking requests are subject to availability, may incur additional charges, and cannot be guaranteed. Our reservations team will confirm the property-specific parking options.
+
+Thank you for your request. The requested dates 2026-09-10 to 2026-09-12 are available. Please find the quotation details below:
+
+1. 2026-09-10 to 2026-09-12
+   Room type: DSPN
+   Rate plan: ONDAY
+   Available units: 1
+   Quoted amount: 218 GBP before tax
+
+Rates are subject to availability and final confirmation at the time of reservation.
+
+FINAL STATUS
+AVAILABILITY_QUOTED

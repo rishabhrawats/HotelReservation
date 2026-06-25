@@ -1,0 +1,64 @@
+HOTEL AI AGENT DEMO OUTPUT
+
+INPUT EMAIL
+From: Demo Customer <demo.customer@example.com>
+Subject: Availability request for August stay
+
+Hello,
+
+Please check availability for 2 rooms for Priya Sharma, 3 adults and 0 children, from 15 August 2026 to 18 August 2026 at Travelodge Manchester Central.
+
+Also, can you confirm whether parking and airport transfer can be arranged?
+
+Thanks,
+Priya
+
+WHAT THE SYSTEM DETECTED
+Primary intent: availability_check
+Next action: answer_question_and_acknowledge_booking
+Summary: Customer requests availability for 2 rooms for Priya Sharma (3 adults, 0 children) from 15 Aug 2026 to 18 Aug 2026 at Travelodge Manchester Central, and asks if parking and airport transfer can be arranged.
+
+BOOKING DETAILS EXTRACTED
+Guest: Priya Sharma
+Arrival: 15 August 2026
+Departure: 18 August 2026
+Adults: 3
+Children: 0
+Rooms: 2
+Reference: Not provided
+Missing fields: None
+
+ORACLE ACTION
+Operation: booking_alternatives
+Success: True
+Message: Requested dates were not available. Nearby alternatives were found.
+Requested stay: 2026-08-15 to 2026-08-18
+Available options:
+  - 2026-08-08 to 2026-08-11, room DSPN, 327 GBP before tax
+  - 2026-08-22 to 2026-08-25, room DSPN, 327 GBP before tax
+
+POLICY ANSWERS USED
+1. Is parking available?
+   Answer: Parking requests are subject to availability, may incur additional charges, and cannot be guaranteed. Our reservations team will confirm the property-specific parking options.
+   Sources: Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=23, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=21, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=24, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=22, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=8
+2. Is taxi or airport transfer available?
+   Answer: Taxi or airport transfer requests are subject to availability and may involve third-party or additional charges. Our reservations team will review and confirm the available options.
+   Sources: Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=5, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=17, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=24, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=22, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=8
+
+CUSTOMER REPLY
+To: demo.customer@example.com
+Subject: Re: Availability request for August stay
+
+Parking requests are subject to availability, may incur additional charges, and cannot be guaranteed. Our reservations team will confirm the property-specific parking options.
+
+Taxi or airport transfer requests are subject to availability and may involve third-party or additional charges. Our reservations team will review and confirm the available options.
+
+Thank you for your request. The requested dates 2026-08-15 to 2026-08-18 are not available for the configured room type. We found these nearby available options:
+
+- 2026-08-08 to 2026-08-11: 327 GBP before tax
+- 2026-08-22 to 2026-08-25: 327 GBP before tax
+
+Please let us know which option you would like to proceed with.
+
+FINAL STATUS
+BOOKING_ALTERNATIVES

@@ -1,0 +1,2 @@
+"""Safe tool boundary helpers."""
+

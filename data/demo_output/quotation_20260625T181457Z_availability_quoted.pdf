@@ -1,0 +1,81 @@
+ %PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1144 >>
+stream
+BT
+/F1 16 Tf
+1 0 0 1 72 760 Tm
+(Hotel Reservation Quotation) Tj
+/F1 10 Tf
+1 0 0 1 72 736 Tm
+() Tj
+1 0 0 1 72 720 Tm
+(Customer: Amit Sharma) Tj
+1 0 0 1 72 704 Tm
+(Email: demo.customer@example.com) Tj
+1 0 0 1 72 688 Tm
+(Hotel code: GB0783) Tj
+1 0 0 1 72 672 Tm
+(Requested stay: 2026-09-10 to 2026-09-12) Tj
+1 0 0 1 72 656 Tm
+(Rooms: 1) Tj
+1 0 0 1 72 640 Tm
+(Adults: 2) Tj
+1 0 0 1 72 624 Tm
+(Children: 0) Tj
+1 0 0 1 72 608 Tm
+() Tj
+1 0 0 1 72 592 Tm
+(Quoted options) Tj
+1 0 0 1 72 576 Tm
+() Tj
+1 0 0 1 72 560 Tm
+(1. Stay: 2026-09-10 to 2026-09-12) Tj
+1 0 0 1 72 544 Tm
+(   Room type: DSPN) Tj
+1 0 0 1 72 528 Tm
+(   Rate plan: ONDAY) Tj
+1 0 0 1 72 512 Tm
+(   Available units: 1) Tj
+1 0 0 1 72 496 Tm
+(   Quoted amount: 218 GBP before tax) Tj
+1 0 0 1 72 480 Tm
+() Tj
+1 0 0 1 72 464 Tm
+(Notes) Tj
+1 0 0 1 72 448 Tm
+(- Room type is fixed to the configured Oracle room type.) Tj
+1 0 0 1 72 432 Tm
+(- Amounts are before tax unless Oracle returned another basis.) Tj
+1 0 0 1 72 416 Tm
+(- Rates are subject to availability and final confirmation at the time of reservation.) Tj
+1 0 0 1 72 400 Tm
+(- This quotation is not a reservation confirmation.) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1507
+%%EOF

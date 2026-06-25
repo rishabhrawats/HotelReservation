@@ -1,0 +1,10 @@
+{
+  "email_id": "demo-email-002",
+  "internet_message_id": null,
+  "subject": "Reservation request with parking and airport transfer",
+  "sender_name": "Priya Sharma",
+  "sender_email": "priya.sharma@example.com",
+  "received_datetime": "2026-06-25T14:35:00Z",
+  "body_text": "Hello, please reserve two twin rooms for Priya Sharma, 3 adults, from 15 August to 18 August at Travelodge Manchester Central. Can you also arrange parking and an airport transfer from Heathrow? Thank you.",
+  "is_read": false
+}

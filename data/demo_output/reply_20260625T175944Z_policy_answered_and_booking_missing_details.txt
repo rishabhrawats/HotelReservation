@@ -1,0 +1,53 @@
+HOTEL AI AGENT DEMO OUTPUT
+
+INPUT EMAIL
+From: Demo Customer <demo.customer@example.com>
+Subject: Booking request
+
+Hello, please check availability for 1 room for Amit Sharma, 2 adults and 0 children, from 10 September 2026 to 12 September 2026.
+
+Also, is parking available?
+
+Regards 
+Rishabh Rawat
+
+WHAT THE SYSTEM DETECTED
+Primary intent: availability_check
+Next action: ask_missing_details
+Summary: Customer requests availability for 1 room for Amit Sharma (2 adults, 0 children) from 10 Sep 2026 to 12 Sep 2026 and asks whether parking is available.
+
+BOOKING DETAILS EXTRACTED
+Guest: Amit Sharma
+Arrival: 10 September 2026
+Departure: 12 September 2026
+Adults: 2
+Children: 0
+Rooms: 1
+Reference: Not provided
+Missing fields: room_type/property_name/hotel_code
+
+POLICY ANSWERS USED
+1. Is parking available?
+   Answer: Parking requests are subject to availability, may incur additional charges, and cannot be guaranteed. Our reservations team will confirm the property-specific parking options.
+   Sources: Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=23, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=21, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=24, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=22, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=8
+2. Is parking available?
+   Answer: Parking requests are subject to availability, may incur additional charges, and cannot be guaranteed. Our reservations team will confirm the property-specific parking options.
+   Sources: Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=23, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=21, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=24, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=22, Enhanced_Hotel_Reservation_OTA_Policy_Document_v4_FULL_EXCEL_COVERAGE.pdf page=8
+
+CUSTOMER REPLY
+To: demo.customer@example.com
+Subject: Re: Booking request (10 Sep 2026 to 12 Sep 2026)
+
+Hello Rishabh Rawat,
+
+Thank you for your message. We’ve received your request for 1 room for Amit Sharma (2 adults, 0 children) for 10 September 2026 to 12 September 2026.
+
+To check availability, could you please share which property/hotel you’d like to stay at (or provide your hotel code), and your preferred room type?
+
+Parking is generally available on a request basis and may be subject to availability and possible additional charges; we will confirm the specific parking options at the property once we have your preferred hotel.
+
+Regards,
+Reservations Team
+
+FINAL STATUS
+POLICY_ANSWERED_AND_BOOKING_MISSING_DETAILS
